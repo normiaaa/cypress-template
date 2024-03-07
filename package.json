@@ -1,0 +1,17 @@
+{
+  "name": "cypress-template",
+  "version": "1.0.0",
+  "description": "This is a template for Cypress projects using Functional Design Pattern.",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "cypress:reports": "cypress run --reporter junit --reporter-options \"mochaFile=results/my-test-output-[hash].xml\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.6",
+    "prettier": "3.2.5"
+  }
+}
