@@ -1,0 +1,23 @@
+{
+  "include": ["**/*.ts", "env.d.ts", "**/*.tsx", "src/**/*", "support/**/*"],
+  "compilerOptions": {
+    "baseUrl": ".", // Base directory for resolving paths
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node"], // Cypress and Node types
+    "paths": {
+      "@support/*": ["support/*"] // Path alias for the "support" folder
+    },
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "skipLibCheck": true
+  },
+  "typeRoots": ["types", "node_modules/@types"],
+
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}

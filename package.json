@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "cypress-automation-template",
+  "version": "1.0.0",
+  "description": "Cypress automation project template using Functional Design Pattern.",
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "format": "npx prettier --write .",
+    "lint": "npx eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "cypress": "^13.17.0",
+    "eslint": "^9.18.0",
+    "eslint-plugin-cypress": "^4.1.0",
+    "globals": "^15.14.0",
+    "prettier": "3.4.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0"
+  }
+}
